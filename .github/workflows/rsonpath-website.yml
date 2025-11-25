@@ -41,6 +41,11 @@ jobs:
             ~/.cargo/git/db/
             target/
           key: rsonpath-website
+      - name: Install wasm toolchain
+        uses: dtolnay/rust-toolchain@b3b07ba8b418998c39fb20f53e8b695cdcc8de1b # master
+        with:
+          toolchain: nightly
+          target: wasm32-unknown-unknown
       - name: cargo install trunk
         uses: baptiste0928/cargo-install@b687c656bda5733207e629b50a22bf68974a0305 # v3.3.2
         with:
