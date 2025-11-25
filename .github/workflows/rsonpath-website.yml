@@ -55,7 +55,7 @@ jobs:
           ref: wasm
           submodules: true
       - name: Build with trunk
-        run:
+        run: |
           cd web/rsonpath-website
           trunk build --release -d ./dist
       - name: Setup Pages
