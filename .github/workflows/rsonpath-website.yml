@@ -62,7 +62,7 @@ jobs:
       - name: Build with trunk
         run: |
           cd web/rsonpath-website
-          trunk build --release -d ./dist
+          trunk build --release -d ./dist --public-url 'https://rsonquery.github.io/web/'
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
